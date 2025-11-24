@@ -28,13 +28,15 @@ function SignUp() {
       <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
         <h1 className="text-3xl font-semibold text-center text-gray-300 ">
           SignUp
-          <span className="text-blue-500">ChatApp</span>
+          <span className="text-cyan-500"> Chatlify</span>
         </h1>
 
         <form onSubmit={handleSubmit}>
           <div>
             <label className="label p-2">
-              <span className="text-base label-text">Full Name</span>
+              <span className="text-base label-text text-yellow-400">
+                Full Name
+              </span>
             </label>
             <input
               value={inputs.fullName}
@@ -48,7 +50,9 @@ function SignUp() {
           </div>
           <div>
             <label className="label p-2 ">
-              <span className="text-base label-text">Username</span>
+              <span className="text-base label-text text-yellow-400">
+                Username
+              </span>
             </label>
             <input
               type="text"
@@ -62,7 +66,9 @@ function SignUp() {
           </div>
           <div>
             <label className="label">
-              <span className="text-base label-text">Password</span>
+              <span className="text-base label-text text-yellow-400">
+                Password
+              </span>
             </label>
             <input
               type="password"
@@ -76,7 +82,9 @@ function SignUp() {
           </div>
           <div>
             <label className="label">
-              <span className="text-base label-text">Confirm Password</span>
+              <span className="text-base label-text text-yellow-400">
+                Confirm Password
+              </span>
             </label>
             <input
               type="password"
@@ -94,7 +102,7 @@ function SignUp() {
           />
           <Link
             to="/login"
-            className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block"
+            className="text-sm hover:underline text-blue-400 hover:text-blue-600 mt-2 inline-block"
           >
             Already have an account?
           </Link>
