@@ -2,10 +2,11 @@ import React, { useEffect, useRef } from "react";
 import Message from "./Message";
 import useGetMessages from "../../hooks/useGetMessages";
 import MessageSkeleton from "../skeletons/MessageSkeleton";
+import useListenMessages from "../../hooks/useListenMessages";
 
 function Messages() {
   const { messages, loading } = useGetMessages();
-
+  useListenMessages();
   //this will authomatically scroll to the last message when the messages loads and there is a scollview
   const lastMesaageRef = useRef();
   useEffect(() => {

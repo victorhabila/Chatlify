@@ -7,11 +7,12 @@ const messageRoutes = require("./routes/message.routes.js");
 const userRoutes = require("./routes/user.routes.js");
 
 const { connectToMongoDB } = require("./db/connectToMongoDB.js");
+const { app } = require("./socket/socket.js");
 
-const app = express();
 const PORT = process.env.PORT || 5000;
 dotenv.config();
 
+//Note that app is imported from socket which will enable us to get real time messages
 // Middleware
 app.use(express.json()); // To parse JSON request bodies from req.body
 app.use(cookieParser());
